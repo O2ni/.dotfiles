@@ -1,0 +1,139 @@
+! ------------------------------------------------------------------------------
+! Nord Color Scheme
+! By Arctic Ice Studio 
+! ------------------------------------------------------------------------------
+
+! special
+*.foreground:   #d8dee8
+*.background:   #20151D
+*.cursorColor:  #b48ead
+
+! black
+*.color0  : #4b5262
+*.color8  : #d8dee8
+
+! red
+*.color1  : #bf616a
+*.color9  : #b3555e
+
+! green
+*.color2  : #a3be8c
+*.color10 : #93ae7c
+
+! yellow
+*.color3  : #ebcb8b
+*.color11 : #dbbb7b
+
+! blue
+*.color4  : #81a1c1
+*.color12 : #7191b1
+
+! magenta
+*.color5  : #b48ead
+*.color13 : #a6809f
+
+! cyan
+*.color6  : #93e5cc
+*.color14 : #7bcdb4
+
+! white
+*.color7  : #e5e9f0
+*.color15 : #d1d5dc
+
+! fonts
+!*.font     : -lucy-tewi-medium-r-normal-*-11-90-100-100-c-60-iso10646-1
+!*.boldFont : -lucy-tewi-bold-r-normal-*-11-80-100-100-c-60-iso10646-1
+
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+
+! ------------------------------------------------------------------------------
+! URxvt configs
+! ------------------------------------------------------------------------------
+
+URxvt.font     :  xft:lucy tewi:size=9,\
+                  xft:Kochi Gothic:antialias=false
+              
+              
+!-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1 
+
+URxvt.boldFont : -lucy-tewi-bold-r-normal-*-11-80-100-100-c-60-iso10646-1, \
+                  xft:Kochi Gothic:size=10, \
+                 -wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
+
+URxvt*saveline:         2000
+URxvt*termName:         rxvt-256color
+URxvt*iso14755:         false
+!URxvt*depth:            32
+URxvt.underlineColor:   #81a1c1
+URxvt.highlightColor:   #7191b1
+URxvt.throughColor:     #93e5cc
+URxvt*cursorColor:      #b48ead
+URxvt*cursorColor2:     #d8dee8
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:  false
+URxvt*internalBorder:   0
+URxvt*externalBorder:   0
+URxvt.colorIT:      	#a3be8c
+URxvt.colorBD:      	#e5e9f0
+URxvt.colorUL:      	#81a1c1
+URxvt.geometry: 		78x12
+URxvt.internalBorder:	24
+URxvt*letterSpace: 	    0
+URxvt.lineSpace: 		2
+
+URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+URxvt.keysym.M-c:       perl:clipboard:copy
+URxvt.keysym.M-v:       perl:clipboard:paste
+URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape:  perl:keyboard-select:activate
+URxvt.keysym.M-s:       perl:keyboard-select:search
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.urlLauncher:      chromium
+URxvt.underlineURLs:    true
+URxvt.urlButton:        1
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 16
+URxvt.tabbed.tab-fg:    15
+URxvt.tabbed.tab-bg:    4
+URxvt*buffered:         false          
+URxvt.urgentOnBell: 	true
+
+!URxvt*depth: 32
+URxvt*background:       [100]#20151D
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+rofi.color-enabled: true
+rofi.color-window: #20151D, #20151D, #20151D
+rofi.color-normal: #20151D, #d8dee8, #20151D, #20151D, #bf616a
+rofi.color-active: #20151D, #b48ead, #20151D, #20151D, #93e5cc
+rofi.color-urgent: #20151D, #ebcb8b, #20151D, #20151D, #ebcb8b 
+
+
+
+rofi.modi: run,drun,window
+rofi.lines: 12
+rofi.padding: 18
+rofi.width: 60
+rofi.location: 0
+rofi.columns: 3
+rofi.sidebar-mode: true
+rofi.font: Noto Sans 8
+
+                                                           
+

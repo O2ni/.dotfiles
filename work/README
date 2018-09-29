@@ -1,0 +1,12 @@
+You need :
+i3, lemonbar, pywal, dmenu2, feh, rofi, xdotool
+urxvt (or any pywal compatible terminal, but i recommend urxvt),
+tewi & siji bitmap fonts (included)
+
+if you want to change the wallpaper, set it using wal.
+then hit super+shift+r to fully reload the config.
+and don't forget to read the configuration files before use.
+
+the workspace indicator in lemonbar use xdotool to determine the current workspace.
+the recycle behaviour of i3 makes xdotool confuse.
+i don't know a better solution.
